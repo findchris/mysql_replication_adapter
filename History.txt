@@ -1,3 +1,9 @@
+== 2009-02-12
+* Patched to work with Rails 2.2.2 which does not provide a require_mysql method [findchris]
+
+== 2008-05-10
+* Patched to work with Rails 2.0.2 [ckiernan] (see:  http://rubyforge.org/tracker/index.php?func=detail&aid=20068&group_id=4116&atid=15778)
+
 == 0.4.0 2007-11-02
 * 1 major enhancement
   * Fixed a bug in the slave selection algorithm that was causing the last item in the list to always be omitted.

@@ -1,0 +1,40 @@
+8
+
+dir
+4247
+svn+ssh://cjohnson@archadmin.socialvibe.com/usr/local/svn/ArchetypeMedia/SocialVibe/trunk/vendor/plugins/mysql_replication_adapter/lib/active_record/connection_adapters/mysql_replication_adapter
+svn+ssh://cjohnson@archadmin.socialvibe.com/usr/local/svn/ArchetypeMedia
+
+
+
+2009-02-13T00:59:32.811773Z
+4247
+cjohnson
+
+
+svn:special svn:externals svn:needs-lock
+
+version.rb
+file
+
+
+
+
+2008-05-10T23:01:50.000000Z
+e8148abac05089b14b408aa5096d4fae
+2009-02-13T00:59:32.811773Z
+4247
+cjohnson
+
+ar_base_ext.rb
+file
+
+
+
+
+2008-05-11T01:46:54.000000Z
+e00436ac7b4eab5243542baafd11bd87
+2009-02-13T00:59:32.811773Z
+4247
+cjohnson
+

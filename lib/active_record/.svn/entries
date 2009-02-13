@@ -1,0 +1,19 @@
+8
+
+dir
+4247
+svn+ssh://cjohnson@archadmin.socialvibe.com/usr/local/svn/ArchetypeMedia/SocialVibe/trunk/vendor/plugins/mysql_replication_adapter/lib/active_record
+svn+ssh://cjohnson@archadmin.socialvibe.com/usr/local/svn/ArchetypeMedia
+
+
+
+2009-02-13T00:59:32.811773Z
+4247
+cjohnson
+
+
+svn:special svn:externals svn:needs-lock
+
+connection_adapters
+dir
+

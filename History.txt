@@ -1,0 +1,9 @@
+== 0.4.0 2007-11-02
+* 1 major enhancement
+  * Fixed a bug in the slave selection algorithm that was causing the last item in the list to always be omitted.
+* A bit of internal restructuring to make the code simpler.
+
+== 0.0.1 2007-07-23
+
+* 1 major enhancement:
+  * Initial release

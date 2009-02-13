@@ -20,9 +20,19 @@ module ActiveRecord
           raise ArgumentError, "No database specified. Missing argument: database."
         end
 
-        require_mysql
+        # Require the MySQL driver and define Mysql::Result.all_hashes
+        unless defined? Mysql
+          begin
+            require_library_or_gem('mysql')
+          rescue LoadError
+            $stderr.puts '!!! The bundled mysql.rb driver has been removed from Rails 2.2. Please install the mysql gem and try again: gem install mysql.'
+            raise
+          end
+        end
+        MysqlCompat.define_all_hashes_method!
+
         mysql = Mysql.init
-        mysql.ssl_set(config[:sslkey], config[:sslcert], config[:sslca], config[:sslcapath], config[:sslcipher]) if config[:sslkey]
+        mysql.ssl_set(config[:sslkey], config[:sslcert], config[:sslca], config[:sslcapath], config[:sslcipher]) if config[:sslca] || config[:sslkey]
 
         ConnectionAdapters::MysqlReplicationAdapter.new(mysql, logger, [host, username, password, database, port, socket], config)
       end
